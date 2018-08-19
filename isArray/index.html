@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let test = ()=>{
+            let iframe = document.createElement('iframe')
+            document.body.appendChild(iframe)
+            oArray = window.frames[0].Array;
+            let arr = new oArray("王真","真帅")
+            console.log(arr instanceof Array)
+            console.log(arr.constructor === Array)
+        }
+        window.addEventListener('load',test)
+    </script>
+    
+</body>
+</html>
